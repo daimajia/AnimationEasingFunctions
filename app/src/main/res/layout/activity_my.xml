@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MyActivity">
+
+    <daimajia.com.eaing.DrawView
+        android:id="@+id/history"
+        android:layout_width="match_parent"
+        android:layout_height="280dp" />
+    <View
+        android:layout_alignLeft="@+id/history"
+        android:id="@+id/target"
+        android:layout_width="8dp"
+        android:layout_alignBottom="@+id/history"
+        android:layout_height="8dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/circle"/>
+    <ListView
+        android:layout_marginTop="280dp"
+        android:id="@+id/easing_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>
