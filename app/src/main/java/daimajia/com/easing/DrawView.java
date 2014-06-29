@@ -24,7 +24,7 @@
  *
  */
 
-package daimajia.com.eaing;
+package daimajia.com.easing;
 
 import android.content.Context;
 import android.graphics.Canvas;

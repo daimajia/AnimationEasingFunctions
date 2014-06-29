@@ -1,4 +1,4 @@
-package daimajia.com.eaing;
+package daimajia.com.easing;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import com.daimajia.easing.BaseEasingMethod;
 import com.daimajia.easing.Skill;
+
+import daimajia.com.eaing.R;
 
 public class EasingAdapter extends BaseAdapter {
 

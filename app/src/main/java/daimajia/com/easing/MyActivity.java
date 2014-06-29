@@ -1,4 +1,4 @@
-package daimajia.com.eaing;
+package daimajia.com.easing;
 
 import android.app.Activity;
 import android.content.Context;
@@ -16,6 +16,8 @@ import com.daimajia.easing.Glider;
 import com.daimajia.easing.Skill;
 import com.nineoldandroids.animation.AnimatorSet;
 import com.nineoldandroids.animation.ObjectAnimator;
+
+import daimajia.com.eaing.R;
 
 
 public class MyActivity extends Activity {
