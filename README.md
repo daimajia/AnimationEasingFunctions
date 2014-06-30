@@ -39,7 +39,7 @@ Just like a glider.
 ```java
 AnimatorSet set = new AnimatorSet();
  set.playTogether(
-         Glider.glide(Skill.BounceInOut, 1200, ObjectAnimator.ofFloat(mTarget, "translationY", 0, 100)
+         Glider.glide(Skill.BounceEaseInOut, 1200, ObjectAnimator.ofFloat(mTarget, "translationY", 0, 100)
  );
 
 set.setDuration(1200);
