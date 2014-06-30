@@ -14,6 +14,23 @@ I found the [Easing Functions](http://easings.net/) made by [Robert Penne](http:
 
 ##Uasage
 
+###Step 1
+
+Gradle
+
+```groovy
+compile 'com.daimajia.easing:library:1.0.0'
+```
+or maven
+
+```xml
+<dependency>
+    <groupId>com.daimajia.easing</groupId>
+    <artifactId>library</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
 Just like a glider.
 
 ```java
