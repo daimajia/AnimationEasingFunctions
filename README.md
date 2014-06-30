@@ -14,7 +14,7 @@ I found the [Easing Functions](http://easings.net/) made by [Robert Penne](http:
 
 ##Uasage
 
-###Step 1
+### Step 1
 
 Gradle
 
@@ -30,6 +30,8 @@ or maven
     <version>1.0.0</version>
 </dependency>
 ```
+
+### Step 2
 
 Just like a glider.
 
