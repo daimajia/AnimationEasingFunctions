@@ -19,7 +19,7 @@ I found the [Easing Functions](http://easings.net/) made by [Robert Penne](http:
 Gradle
 
 ```groovy
-compile 'com.daimajia.easing:library:1.0.0@aar'
+compile 'com.daimajia.easing:library:1.0.1@aar'
 ```
 or maven
 
@@ -27,7 +27,7 @@ or maven
 <dependency>
     <groupId>com.daimajia.easing</groupId>
     <artifactId>library</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <type>apklib</type>
 </dependency>
 ```
