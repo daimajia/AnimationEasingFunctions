@@ -104,11 +104,21 @@ afterEvaluate { project ->
         }
     }
 
-    task jar(type: Jar) {
-        from android.sourceSets.main.java
+    task clearJar(type: Delete){
+        delete 'build/libs/library.jar'
     }
 
-    task androidJavadocs(type: Javadoc) {
+    task makeJar(type: Copy, dependsOn: clearJar){
+        from('build/intermediates/bundles/release/')
+        into('build/libs/')
+        include('classes.jar')
+        rename('classes.jar','library.jar')
+    }
+
+    def jar = file('build/libs/library.jar')
+
+
+    task androidJavadocs(type: Javadoc, dependsOn: makeJar) {
         source = android.sourceSets.main
         classpath += project.files(android.getBootClasspath() .join(File.pathSeparator))
     }
