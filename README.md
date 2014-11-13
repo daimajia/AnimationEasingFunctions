@@ -19,7 +19,7 @@ I found the [Easing Functions](http://easings.net/) made by [Robert Penne](http:
 Gradle
 
 ```groovy
-compile 'com.daimajia.easing:library:1.0.0'
+compile 'com.daimajia.easing:library:1.0.0@aar'
 ```
 or maven
 
@@ -28,6 +28,7 @@ or maven
     <groupId>com.daimajia.easing</groupId>
     <artifactId>library</artifactId>
     <version>1.0.0</version>
+    <type>apklib</type>
 </dependency>
 ```
 
@@ -38,7 +39,7 @@ Just like a glider.
 ```java
 AnimatorSet set = new AnimatorSet();
  set.playTogether(
-         Glider.glide(s, 1200, ObjectAnimator.ofFloat(mTarget, "translationY", 0, 100)
+         Glider.glide(Skill.BounceEaseInOut, 1200, ObjectAnimator.ofFloat(mTarget, "translationY", 0, 100)
  );
 
 set.setDuration(1200);
