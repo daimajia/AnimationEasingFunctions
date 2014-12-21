@@ -19,11 +19,17 @@ I found the [Easing Functions](http://easings.net/) made by [Robert Penne](http:
 Gradle
 
 ```groovy
+compile 'com.nineoldandroids:library:2.4.0'
 compile 'com.daimajia.easing:library:1.0.1@aar'
 ```
 or maven
 
 ```xml
+<dependency>
+    <groupId>com.nineoldandroids</groupId>
+    <artifactId>library</artifactId>
+    <version>2.4.0</version>
+</dependency>
 <dependency>
     <groupId>com.daimajia.easing</groupId>
     <artifactId>library</artifactId>
