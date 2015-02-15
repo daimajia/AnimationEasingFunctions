@@ -19,15 +19,21 @@ I found the [Easing Functions](http://easings.net/) made by [Robert Penne](http:
 Gradle
 
 ```groovy
-compile 'com.daimajia.easing:library:1.0.0@aar'
+compile 'com.nineoldandroids:library:2.4.0'
+compile 'com.daimajia.easing:library:1.0.1@aar'
 ```
 or maven
 
 ```xml
 <dependency>
+    <groupId>com.nineoldandroids</groupId>
+    <artifactId>library</artifactId>
+    <version>2.4.0</version>
+</dependency>
+<dependency>
     <groupId>com.daimajia.easing</groupId>
     <artifactId>library</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <type>apklib</type>
 </dependency>
 ```
@@ -45,6 +51,17 @@ AnimatorSet set = new AnimatorSet();
 set.setDuration(1200);
 set.start();
 ```
+
+#### Tips
+
+If you encounter exceptions suce as `ClassNotFoundExceptions` ([#4](https://github.com/daimajia/AnimationEasingFunctions/issues/4)), please add the following to your `proguard-project.txt`:
+
+```
+-keep class com.daimajia.easing.** { *; }
+-keep interface com.daimajia.easing.** { *; }
+```
+
+More details [visit official guide](http://developer.android.com/tools/help/proguard.html#configuring).
 
 #About me
 
