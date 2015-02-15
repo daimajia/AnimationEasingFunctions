@@ -52,6 +52,17 @@ set.setDuration(1200);
 set.start();
 ```
 
+#### Tips
+
+If you encounter exceptions suce as `ClassNotFoundExceptions` ([#4](https://github.com/daimajia/AnimationEasingFunctions/issues/4)), please add the following to your `proguard-project.txt`:
+
+```
+-keep class com.daimajia.easing.** { *; }
+-keep interface com.daimajia.easing.** { *; }
+```
+
+More details [visit official guide](http://developer.android.com/tools/help/proguard.html#configuring).
+
 #About me
 
 A student in mainland China. 
