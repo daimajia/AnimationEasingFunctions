@@ -24,8 +24,9 @@
 
 package com.daimajia.easing;
 
-import com.nineoldandroids.animation.PropertyValuesHolder;
-import com.nineoldandroids.animation.ValueAnimator;
+
+import android.animation.PropertyValuesHolder;
+import android.animation.ValueAnimator;
 
 public class Glider {
 

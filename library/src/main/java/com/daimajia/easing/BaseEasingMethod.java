@@ -24,11 +24,11 @@
 
 package com.daimajia.easing;
 
-import com.nineoldandroids.animation.TypeEvaluator;
+import android.animation.TypeEvaluator;
 
 import java.util.ArrayList;
 
-public abstract class BaseEasingMethod implements TypeEvaluator<Number>{
+public abstract class BaseEasingMethod implements TypeEvaluator<Number> {
     protected float mDuration;
 
     private ArrayList<EasingListener> mListeners = new ArrayList<EasingListener>();
