@@ -1,5 +1,7 @@
 package daimajia.com.easing;
 
+import android.animation.AnimatorSet;
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
@@ -14,8 +16,6 @@ import android.widget.ListView;
 import com.daimajia.easing.BaseEasingMethod;
 import com.daimajia.easing.Glider;
 import com.daimajia.easing.Skill;
-import com.nineoldandroids.animation.AnimatorSet;
-import com.nineoldandroids.animation.ObjectAnimator;
 
 import daimajia.com.eaing.R;
 
@@ -32,24 +32,24 @@ public class MyActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-        mEasingList = (ListView)findViewById(R.id.easing_list);
+        mEasingList = (ListView) findViewById(R.id.easing_list);
         mAdapter = new EasingAdapter(this);
         mEasingList.setAdapter(mAdapter);
         mTarget = findViewById(R.id.target);
-        mHistory = (DrawView)findViewById(R.id.history);
+        mHistory = (DrawView) findViewById(R.id.history);
         mEasingList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 mHistory.clear();
-                Skill s = (Skill)view.getTag();
+                Skill s = (Skill) view.getTag();
                 AnimatorSet set = new AnimatorSet();
                 mTarget.setTranslationX(0);
                 mTarget.setTranslationY(0);
                 set.playTogether(
-                        Glider.glide(s, 1200, ObjectAnimator.ofFloat(mTarget, "translationY", 0, dipToPixels(MyActivity.this, -(160 - 3))),new BaseEasingMethod.EasingListener() {
+                        Glider.glide(s, 1200, ObjectAnimator.ofFloat(mTarget, "translationY", 0, dipToPixels(MyActivity.this, -(160 - 3))), new BaseEasingMethod.EasingListener() {
                             @Override
                             public void on(float time, float value, float start, float end, float duration) {
-                                mHistory.drawPoint(time,duration,value - dipToPixels(MyActivity.this,60));
+                                mHistory.drawPoint(time, duration, value - dipToPixels(MyActivity.this, 60));
                             }
                         })
                 );
