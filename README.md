@@ -1,4 +1,4 @@
-# Android Easing Functions
+# Android Easing Functions [![Build Status](https://travis-ci.org/daimajia/AnimationEasingFunctions.svg?branch=master)](https://travis-ci.org/daimajia/AnimationEasingFunctions)
 
 This project is originally from my another project, [AndroidViewAnimation](https://github.com/daimajia/AndroidViewAnimations), which is an animation collection, to help you make animation easier.
 
