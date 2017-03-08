@@ -12,7 +12,7 @@ I found the [Easing Functions](http://easings.net/) made by [Robert Penne](http:
 
 ![](http://ww4.sinaimg.cn/mw690/610dc034jw1ehuzoul4h8g20b00gmh9s.gif)
 
-## Uasage
+## Usage
 
 > `NineOldAndroids` has been removed since version 2.0. Thanks Jake Wharton.
 
