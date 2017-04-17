@@ -68,7 +68,7 @@ If you encounter exceptions such as `ClassNotFoundExceptions` ([#4](https://gith
 
 More details [visit official guide](http://developer.android.com/tools/help/proguard.html#configuring).
 
-#About me
+# About me
 
 A student in mainland China. 
 
