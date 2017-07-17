@@ -24,7 +24,7 @@ Gradle
 
 ```groovy
 compile 'com.android.support:appcompat-v7:25.1.1'
-compile 'com.daimajia.easing:library:2.0@aar'
+compile 'com.daimajia.easing:library:2.1@aar'
 ```
 or maven
 
@@ -38,7 +38,7 @@ or maven
 <dependency>
     <groupId>com.daimajia.easing</groupId>
     <artifactId>library</artifactId>
-    <version>2.0</version>
+    <version>2.1</version>
     <type>apklib</type>
 </dependency>
 ```
