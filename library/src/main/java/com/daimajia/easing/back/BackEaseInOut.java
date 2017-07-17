@@ -41,7 +41,7 @@ public class BackEaseInOut extends BaseEasingMethod{
 
     @Override
     public Float calculate(float t, float b, float c, float d) {
-        if ((t /= d / 2) < 1) return c / 2 * (t * t * (((s *= (1.525)) + 1) * t - s)) + b;
-        return c / 2 * ((t -= 2) * t * (((s *= (1.525)) + 1) * t + s) + 2) + b;
+        if ((t /= d / 2) < 1) return c / 2 * (t * t * ((s + 1) * t - s)) + b;
+        return c / 2 * ((t -= 2) * t * ((s + 1) * t + s) + 2) + b;
     }
 }
