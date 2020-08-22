@@ -1,19 +1,20 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 29
 
     defaultConfig {
-        applicationId "daimajia.com.eaing"
+        applicationId 'daimajia.com.eaing'
         minSdkVersion 11
-        targetSdkVersion 25
-        versionCode 3
-        versionName "2.1"
+        targetSdkVersion 29
+        versionCode 6
+        versionName '2.2'
     }
+
     lintOptions {
         abortOnError false
     }
+
     buildTypes {
         release {
             minifyEnabled true
@@ -23,6 +24,6 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(":library")
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':library')
 }
