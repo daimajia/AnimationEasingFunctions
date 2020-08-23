@@ -7,8 +7,8 @@ android {
         applicationId 'daimajia.com.eaing'
         minSdkVersion 11
         targetSdkVersion 29
-        versionCode 6
-        versionName '2.2'
+        versionCode 7
+        versionName '2.3'
     }
 
     lintOptions {
