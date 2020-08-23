@@ -13,7 +13,6 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            consumerProguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
 }
