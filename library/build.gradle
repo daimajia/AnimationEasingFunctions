@@ -1,19 +1,19 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion COMPILE_SDK_VERSION.toInteger()
 
     defaultConfig {
-        minSdkVersion 11
-        targetSdkVersion 29
-        versionCode 7
-        versionName '2.3'
+        minSdkVersion MIN_SDK_VERSION.toInteger()
+        targetSdkVersion TARGET_SDK_VERSION.toInteger()
+        versionCode VERSION_CODE.toInteger()
+        versionName VERSION_NAME
     }
 
     buildTypes {
         release {
             minifyEnabled false
-            consumerProguardFiles 'proguard-rules.txt'
+            consumerProguardFiles 'proguard-rules.pro'
         }
     }
 }

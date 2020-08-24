@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion COMPILE_SDK_VERSION.toInteger()
 
     defaultConfig {
-        applicationId 'daimajia.com.eaing'
-        minSdkVersion 11
-        targetSdkVersion 29
-        versionCode 7
-        versionName '2.3'
+        applicationId GROUP
+        minSdkVersion MIN_SDK_VERSION.toInteger()
+        targetSdkVersion TARGET_SDK_VERSION.toInteger()
+        versionCode VERSION_CODE.toInteger()
+        versionName VERSION_NAME
     }
 
     lintOptions {
